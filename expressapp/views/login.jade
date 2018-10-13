@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1  Login Form
+  form(method='POST' action='/auth')
+            div.form-group
+              label(for='login') Login
+              input(type='text' id='login' placeholder='login' name='login')
+            div.form-group
+              label(for='password') Password
+              input(type='password' id='password' placeholder='password' name='password')
+            button(type='submit') Log in
